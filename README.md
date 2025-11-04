@@ -52,3 +52,28 @@ Unicore promotes **collaboration**, **data-driven learning**, and **secure manag
 
 ## ⚙️ System Architecture
 
+            ┌────────────────────┐
+            │      Frontend      │
+            │ (React / Angular)  │
+            └────────┬───────────┘
+                     │ REST API
+            ┌────────┴───────────┐
+            │   Spring Boot App  │
+            │  (Controllers,     │
+            │  Services, DAO)    │
+            └────────┬───────────┘
+                     │ JPA / Hibernate
+            ┌────────┴───────────┐
+            │      MySQL DB      │
+            └────────────────────┘
+
+
+---
+
+## 🧰 Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/Unicore-LMS.git
+cd chhotu-LMS
+
