@@ -79,6 +79,65 @@ cd chhotu-LMS
 ```
 ---
 
+### Application Configuration
+Below is the configuration used in the application.properties file for UniCore – Learning Management System.
+These settings handle the server, database, mail, security, and logging configuration.
+```bash
+# =====================================================
+# =============== SERVER CONFIGURATION =================
+# =====================================================
+server.port=8484
+spring.application.name=UniCore
+
+# =====================================================
+# =============== DATABASE CONFIGURATION ===============
+# =====================================================
+spring.datasource.url=jdbc:mysql://localhost:3306/lms?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=Chhotu@7493
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# =====================================================
+# ================= JPA / HIBERNATE ===================
+# =====================================================
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+
+# =====================================================
+# ================== MAIL CONFIG ======================
+# =====================================================
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=chhotuhlp7079@gmail.com
+spring.mail.password=qzrb agwb izxq ggoy
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+# =====================================================
+# ================= SECURITY CONFIG ===================
+# =====================================================
+# Default credentials (for development)
+spring.security.user.name=admin
+spring.security.user.password=admin123
+spring.security.user.roles=ADMIN
+
+# =====================================================
+# ================== LOGGING CONFIG ===================
+# =====================================================
+logging.level.org.springframework=INFO
+logging.level.com.unicore=DEBUG
+logging.file.name=logs/unicore_app.log
+
+# =====================================================
+# ================== JWT CONFIG (Optional) =============
+# =====================================================
+# jwt.secret=your_secret_key_here
+# jwt.expiration=3600000  # 1 hour in milliseconds
+```
+---
+
 ## 🧠 Future Enhancements
 
 ✅ Add AI-based quiz generation
@@ -100,3 +159,5 @@ file for details.
 
 👨‍💻 Chhotu Kumar
 Java Full Stack Developer | Spring Boot | React | MySQL
+
+
