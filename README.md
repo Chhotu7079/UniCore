@@ -87,14 +87,14 @@ These settings handle the server, database, mail, security, and logging configur
 # =============== SERVER CONFIGURATION =================
 # =====================================================
 server.port=8484
-spring.application.name=UniCore
+spring.application.name=UniCore-LMS
 
 # =====================================================
 # =============== DATABASE CONFIGURATION ===============
 # =====================================================
-spring.datasource.url=jdbc:mysql://localhost:3306/lms?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+spring.datasource.url=jdbc:mysql://localhost:3306/dbname?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
 spring.datasource.username=root
-spring.datasource.password=Chhotu@7493
+spring.datasource.password= add your password 
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 # =====================================================
@@ -110,15 +110,14 @@ spring.jpa.properties.hibernate.format_sql=true
 # =====================================================
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
-spring.mail.username=chhotuhlp7079@gmail.com
-spring.mail.password=qzrb agwb izxq ggoy
+spring.mail.username=add your email id
+spring.mail.password=add your paassword  
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 
 # =====================================================
 # ================= SECURITY CONFIG ===================
 # =====================================================
-# Default credentials (for development)
 spring.security.user.name=admin
 spring.security.user.password=admin123
 spring.security.user.roles=ADMIN
@@ -127,16 +126,31 @@ spring.security.user.roles=ADMIN
 # ================== LOGGING CONFIG ===================
 # =====================================================
 logging.level.org.springframework=INFO
-logging.level.com.unicore=DEBUG
-logging.file.name=logs/unicore_app.log
+logging.level.com.LMS=DEBUG
+logging.file.name=logs/lms_app.log
+
+# =====================================================
+# ================== SWAGGER CONFIG ===================
+# =====================================================
+# Swagger/OpenAPI Configuration
+springdoc.api-docs.enabled=true
+springdoc.api-docs.path=/api-docs
+springdoc.swagger-ui.enabled=true
+springdoc.swagger-ui.path=/swagger-ui.html
+springdoc.swagger-ui.operationsSorter=alpha
+springdoc.swagger-ui.tagsSorter=alpha
+springdoc.swagger-ui.docExpansion=none
 
 # =====================================================
 # ================== JWT CONFIG (Optional) =============
 # =====================================================
 # jwt.secret=your_secret_key_here
 # jwt.expiration=3600000  # 1 hour in milliseconds
+
 ```
 ---
+Once your application is running, open:
+👉 http://localhost:8484/swagger-ui.html
 
 ## 🧠 Future Enhancements
 
