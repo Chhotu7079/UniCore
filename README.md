@@ -1,65 +1,54 @@
-# 🎓 Unicore – Learning Management System (LMS)
+# 🧑‍💻 Unicore – Learning Management System (LMS)
 
 ![Java](https://img.shields.io/badge/Java-17-orange?logo=java)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=springboot)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-brightgreen?logo=springboot)
 ![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Build Tool](https://img.shields.io/badge/Build-Maven-red?logo=apachemaven)
+![Maven](https://img.shields.io/badge/Build-Maven-yellow?logo=apache-maven)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 
 ---
 
-## 🧩 Overview
+## 📘 Overview
 
-**Unicore** is a **web-based Learning Management System (LMS)** built using **Java Spring Boot** that simplifies online learning, course management, and student performance tracking.  
-It offers **role-based access control** for **Admins**, **Instructors**, and **Students**, allowing educational institutions to manage all learning activities in one secure platform.
+**Unicore** is a full-featured **Learning Management System (LMS)** built using **Java Spring Boot**.  
+It provides a **centralized digital environment** for managing courses, users, and learning content efficiently.  
+The platform is designed to **streamline online education** through automated workflows, secure access control, and real-time performance tracking.
 
----
+It offers **role-based access** for:
+- 🧑‍💼 **Admins** – manage users, courses, and overall platform activities.  
+- 👩‍🏫 **Instructors** – create, manage, and grade assignments, quizzes, and lectures.  
+- 🎓 **Students** – enroll in courses, submit assignments, and track progress.  
 
-## 🚀 Features
-
-### 👥 1. User Management
-- **Role-Based Access Control** – Supports Admin, Instructor, and Student roles.  
-- **Secure Registration & Login** – Authentication handled via Spring Security.  
-- **Admin-Only User Creation** – Admins can create new users (validated at service level).  
-- **Profile Management** – Users can view and update their profile information.
-
-### 📚 2. Course Management
-- **Course Creation & Management** – Instructors can create and manage courses with files, videos, and PDFs.  
-- **Enrollment Handling** – Students can enroll in available courses.  
-- **Attendance Tracking** – Instructors generate OTPs for each session to verify student attendance.
-
-### 🧾 3. Assessments & Grading
-- **Quiz Management** – Supports MCQs, True/False, and Short Answer questions.  
-- **Assignment Submission** – Students upload assignments for grading.  
-- **Grading & Feedback** – Instructors review and grade student work.
-
-### 📈 4. Performance Tracking
-- **Student Dashboard** – Tracks quiz performance, assignment grades, and attendance.  
-- **Instructor Analytics** – Monitor student progress and performance trends.
-
-### 🔔 5. Notifications
-- **System Alerts** – Real-time notifications for enrollments, grades, and updates.  
-- **Email Notifications** – Integrated via JavaMailSender.
-
-### 🧮 6. Bonus Features
-- **Excel Report Generation** – Generate performance reports using Apache POI.  
-- **Visual Analytics** – Display student progress and course completion through charts.
+Unicore promotes **collaboration**, **data-driven learning**, and **secure management** of educational resources, ensuring a seamless experience for all stakeholders.
 
 ---
 
-## 🧱 Technical Stack
+## 🚀 Project Highlights
 
-| Layer | Technology |
-|-------|-------------|
-| **Backend** | Java 17, Spring Boot 3.x |
-| **Database** | MySQL / PostgreSQL |
-| **Authentication** | Spring Security (BCrypt PasswordEncoder) |
-| **Email Service** | JavaMailSender |
-| **Reporting** | Apache POI |
-| **Testing** | JUnit |
+- **🧩 Role-Based Authentication:** Secure login and authorization using JWT and Spring Security.  
+- **📚 Course Management:** Admins and instructors can create, update, and organize courses.  
+- **🧠 Quiz & Assessment System:** Interactive quiz and grading features for evaluating students.  
+- **📈 Performance Tracking:** Students can view their scores, submissions, and learning progress.  
+- **📅 Attendance Module:** Digital attendance tracking for instructors and admins.  
+- **💬 Communication Channel:** Enables announcements and course-related discussions.  
+- **🔍 RESTful APIs:** Clean and scalable backend design for easy integration with front-end frameworks.  
+- **🛡️ Secure Data Handling:** Uses BCrypt encryption and validation for user credentials.  
+
+---
+
+## 🏗️ Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| **Backend** | Java, Spring Boot, Spring Security, Hibernate/JPA |
+| **Database** | MySQL |
 | **Build Tool** | Maven |
+| **API Testing** | Postman |
+| **Version Control** | Git & GitHub |
+| **Deployment (Optional)** | Docker / AWS EC2 / Render |
 
 ---
 
-## 🧰 System Architecture
+## ⚙️ System Architecture
 
