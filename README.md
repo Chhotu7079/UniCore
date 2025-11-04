@@ -79,12 +79,24 @@ cd chhotu-LMS
 ```
 ---
 
-###📄 License
+## 🧠 Future Enhancements
 
+✅ Add AI-based quiz generation
+
+✅ Integrate video lectures using cloud storage (AWS S3)
+
+✅ Implement chat and discussion forums
+
+✅ Generate detailed analytics dashboards for performance visualization
+
+✅ Mobile-friendly responsive frontend
+
+
+## 📄 License
 This project is licensed under the MIT License – see the LICENSE
 file for details.
 
-##💡 Author
+## 💡 Author
 
 👨‍💻 Chhotu Kumar
 Java Full Stack Developer | Spring Boot | React | MySQL
