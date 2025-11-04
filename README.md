@@ -77,3 +77,13 @@ Unicore promotes **collaboration**, **data-driven learning**, and **secure manag
 git clone https://github.com/your-username/Unicore-LMS.git
 cd chhotu-LMS
 
+
+📄 License
+
+This project is licensed under the MIT License – see the LICENSE
+ file for details.
+
+💡 Author
+
+👨‍💻 Chhotu Kumar
+Java Full Stack Developer | Spring Boot | React | MySQL
